@@ -1,0 +1,39 @@
+.father1{
+background-color: gray;
+height: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: xx-large;
+}
+.father2{
+    background-color: pink;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-top: 50px;
+    line-height: 45px;
+    overflow: none;
+}
+.father::after{
+    clear: both;
+    display: table;
+}
+.left-son{
+    background-color:red;
+    height: 150px;
+    width: 150px;
+    float: left;
+    line-height: 25px;
+}
+.right-son{
+    background-color:green;
+    height: 50px;
+    width: 200px;
+    float: left;
+}
+.father3{
+    background-color:yellow;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin-top: 120px;
+}

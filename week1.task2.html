@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        .box{
+            height: 30px;
+            width: 90px;
+            margin-left: 80px;
+            color:white;
+            background-color: rgba(124, 16, 143, 0.673);
+        }
+
+        .box1{
+             accent-color: rgba(124,16,143,0.673);
+             
+             }
+         option:hover{
+            &:checked{
+                background-color: blueviolet;
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <table border="0" cellpadding="10">
+        <tr>
+            <td>头像</td>
+            <td weight="500">
+                <button>选择文件</button>
+                未选择文件
+            </td>
+        </tr>
+        <tr>
+            <td>昵称</td>
+            <td>
+                <input>
+            </td>
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td>
+                <select>
+                    <option>大专</option>
+                    <option>本科</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                <input type="radio" name="gender" class="box1">男
+                <input type="radio" name="gender" class="box1">女
+            </td>
+        </tr>
+        <tr>
+            <td>爱好</td>
+            <td class="box1">
+                <input type="checkbox" name="hobby">电影
+                <input type="checkbox" name="hobby">摄影
+                <input type="checkbox" name="hobby">音乐
+                <input type="checkbox" name="hobby">阅读
+            </td>
+        </tr>
+        <tr>
+            <td>签名</td>
+            <td>
+              <textarea name="comment" rows="5" cols="30"></textarea>
+            </td>
+        </tr>
+    </table>
+    <button class="box">保存</button>
+</body>
+</html>

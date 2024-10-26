@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学而界面</title>
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.398);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 60px;
+            width: 100%;
+        background-color: white;
+        
+        }
+        .box3{
+            position: absolute;
+            margin-left: 180px;
+            margin-top: 5px;
+        }
+        .box4 a{
+            float: left;
+            position:absolute;
+            margin-top: 20px;
+            color:black;
+            margin-left: 300px;
+        }
+        .box8 a{
+            float: left;
+            position:absolute;
+            margin-top: 20px;
+            color:black;
+            margin-left: 400px;
+        }
+        .box4 a:hover{
+            color: red;
+            height: 10px;
+            border-top: 2px solid;
+        }
+        .box8 a:hover{
+            color: red;
+            height: 10px;
+            border-top: 2px solid;
+        }
+        .box5{
+            position: absolute;
+            margin-top: 20px;
+            border-color:  red ;
+            width: 120px;
+            margin-left: 540px;
+        }
+        .box9{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 650px;
+            
+        }
+        .box6{
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 750px;
+        }
+        .box7{
+            color: white;
+            background-color: rgb(34, 177, 129);
+            position: absolute;
+            width: 80px;
+            height: 25px;
+            margin-top: 15px;
+            margin-left: 800px;
+        }
+        .box{
+            background-color: white;
+            position: absolute;
+            height: 600px;
+            width: 700px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+        .box10{
+            width: 80px;
+            height: 80px;
+            border: 2px solid rgba(11, 162, 11, 0.43);
+            color:rgba(11, 162, 11, 0.43) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 100px;
+            margin-top: 20px; 
+            margin-left: 54px;
+            float: left; 
+            padding: 10px;
+        }
+        .box11{
+            margin-top:40px ;
+            font-size: 12px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            margin-left: 69px;
+            float: left;
+
+        }
+        .box11 li{
+            list-style-type: disc;
+            padding: -10px;
+         }
+        .box11 p{
+            font-size: 8px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box11 li:hover{
+           color: red;
+        }
+        .box12{
+            border-left: 1px solid rgba(0, 0, 0, 0.168);
+            height: 85px;
+            margin-top: 160px;
+            margin-left: 185px;
+            position: absolute;
+        }
+        .box13{
+            border-left: 1px solid rgba(0, 0, 0, 0.168);
+            height: 85px;
+            margin-top: 160px;
+            margin-left: 344px;
+            position: absolute;
+        }
+        .box14{
+            border-left: 1px solid rgba(0, 0, 0, 0.168);
+            height: 85px;
+            margin-top: 160px;
+            margin-left: 500px;
+            position: absolute;
+        }
+        .box15{
+            border-radius: 20px;
+            border:2px rgba(27, 172, 90, 0.572) solid;
+            height: 20px;
+            width: 20px;
+            margin-top: 280px;
+            margin-left: 95px;
+            position: absolute;
+        }
+        .box16{
+            border-radius: 20px;
+            border:2px rgba(27, 172, 90, 0.572) solid;
+            height: 20px;
+            width: 20px;
+            margin-top: 280px;
+            margin-left: 255px;
+            position: absolute;
+        }
+        .box17{
+            border-radius: 20px;
+            border:2px rgba(27, 172, 90, 0.572) solid;
+            height: 20px;
+            width: 20px;
+            margin-top: 280px;
+            margin-left: 410px;
+            position: absolute;
+        }
+        .box18{
+            border-radius: 20px;
+            border:2px rgba(27, 172, 90, 0.572) solid;
+            height: 20px;
+            width: 20px;
+            margin-top: 280px;
+            margin-left: 569px;
+            position: absolute;
+        }
+        .box19{
+            border-left: 1.5px rgba(27, 172, 90, 0.29) solid;
+            position: absolute;
+            height: 19px;
+            margin-top:282px;
+            margin-left: 106px;     
+        }
+        .box20{
+            border-left: 1.5px rgba(27, 172, 90, 0.29) solid;
+            position: absolute;
+            height: 19px;
+            margin-top:282px;
+            margin-left: 266px;
+        }
+        .box21{
+            border-left: 1.5px rgba(27, 172, 90, 0.29) solid;
+            position: absolute;
+            height: 19px;
+            margin-top:282px;
+            margin-left: 421px;
+        }
+        .box22{
+            border-left: 1.5px rgba(27, 172, 90, 0.29) solid;
+            position: absolute;
+            height: 19px;
+            margin-top:282px;
+            margin-left: 580px;
+        }
+        .box23{
+            border-top: 1.5px rgba(27, 172, 90, 0.29) solid ;
+            position: absolute;
+            width: 19px;
+            margin-top:291px;
+            margin-left: 97px;
+            position: absolute;
+        }
+        .box24{
+            border-top: 1.5px rgba(27, 172, 90, 0.29) solid ;
+            position: absolute;
+            width: 19px;
+            margin-top:291px;
+            margin-left: 257px;
+            position: absolute;
+        }
+        .box25{
+            border-top: 1.5px rgba(27, 172, 90, 0.29) solid ;
+            position: absolute;
+            width: 19px;
+            margin-top:291px;
+            margin-left: 412px;
+            position: absolute;
+        }
+        .box26{
+            border-top: 1.5px rgba(27, 172, 90, 0.29) solid ;
+            position: absolute;
+            width: 19px;
+            margin-top:291px;
+            margin-left: 571.5px;
+            position: absolute;
+        }
+        .box1{
+            background-color: white;
+            position: absolute;
+            height: 400px;
+            width: 700px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            margin-top: 615px;
+        }
+        .box27{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            font-size: 25px;
+        }
+        .box28{
+            text-align: center;
+            color:rgb(17, 168, 17);
+        }
+        .box29{
+            height: 100px;
+            width: 120px;
+            border: 3px solid rgb(17, 168, 17);
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        .box29 div{
+            margin-top: 30px;
+            margin-left: 45px;
+            position: absolute;
+        }
+        .box29 p{
+            margin-top: 50px;
+            margin-left: 15px;
+            position: absolute;
+        }
+        .box30{
+            height: 100px;
+            width: 120px;
+            border: 3px solid rgb(17, 168, 17);
+            position: absolute;
+            margin-top: 123px;
+            margin-left: 163px;
+        }
+        .box30 div{
+            margin-top: 30px;
+            margin-left: 45px;
+            position: absolute;
+        }
+        .box30 p{
+            margin-top: 50px;
+            margin-left: 15px;
+            position: absolute;
+        }
+        .box31{
+            height: 100px;
+            width: 120px;
+            border: 3px solid rgb(17, 168, 17);
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 286px;
+        }
+        .box31 div{
+            margin-top: 30px;
+            margin-left: 45px;
+            position: absolute;
+        }
+        .box31 p{
+            margin-top: 50px;
+            margin-left: 4px;
+            position: absolute;
+        }
+        .box32{
+            height: 100px;
+            width: 120px;
+            border: 3px solid rgb(17, 168, 17);
+            position: absolute;
+            margin-top: 123px;
+            margin-left: 409px;
+        }
+        .box32 div{
+            margin-top: 30px;
+            margin-left: 45px;
+            position: absolute;
+        }
+        .box32 p{
+            margin-top: 50px;
+            position: absolute;
+        }
+        .box33{
+            height: 100px;
+            width: 120px;
+            border: 3px solid rgb(17, 168, 17);
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 532px;
+        }
+        .box33 div{
+            margin-top: 30px;
+            margin-left: 45px;
+            position: absolute;
+        }
+        .box33 p{
+            margin-top: 50px;
+            margin-left: 4px;
+            position: absolute;
+        }
+        .box29:hover{
+            color: white;
+            background-color:rgb(17, 168, 17) ;
+        }
+        .box30:hover{
+            color: white;
+            background-color:rgb(17, 168, 17) ;
+        }
+        .box31:hover{
+            color: white;
+            background-color:rgb(17, 168, 17) ;
+        }
+        .box32:hover{
+            color: white;
+            background-color:rgb(17, 168, 17) ;
+        }
+        .box33:hover{
+            color: white;
+            background-color:rgb(17, 168, 17) ;
+        }
+        .box34{
+            position: absolute;
+            margin-top: 135px;
+            margin-left: 65px;
+            font-size: 80px;
+            color: red;
+            text-decoration: underline;
+        }
+        .box35{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 188px;
+            font-size: 80px;
+            color: red;
+            text-decoration: underline;
+        }
+        .box36{
+            position: absolute;
+            margin-top: 135px;
+            margin-left: 311px;
+            font-size: 80px;
+            color: red;
+            text-decoration: underline;
+        }
+        .box37{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 433px;
+            font-size: 80px;
+            color: red;
+            text-decoration: underline;
+        }
+        .box38{
+            position: absolute;
+            margin-top: 135px;
+            margin-left: 556px;
+            font-size: 80px;
+            color: red;
+            text-decoration: underline;
+        }
+        .box2{
+            background-color: white;
+            position: absolute;
+            height: 400px;
+            width: 700px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            margin-top: 1030px;
+        }
+        .box39{
+            height: 100px;
+            width: 150px;
+            background-color: rgba(218, 52, 37, 0.615);
+            position: absolute;
+            margin-top:80px;
+            margin-left: 10px;
+            color: white;
+        }
+        .box39 div{
+            margin-top: 35px;
+            margin-left: 18px;
+            position: absolute;
+        }
+        .box39 p{
+            margin-top: 50px;
+            font-size: small;
+            position: absolute;
+            margin-left: 55px;
+        }
+        .box40{
+            height: 100px;
+            width: 150px;
+            background-color: rgba(218, 52, 37, 0.615);
+            position: absolute;
+            margin-top:80px;
+            margin-left: 185px;
+            color: white;
+        }
+        .box40 div{
+            margin-top: 35px;
+            margin-left: 18px;
+            position: absolute;
+        }
+        .box40 p{
+            margin-top: 50px;
+            font-size: small;
+            position: absolute;
+            margin-left: 55px;
+        }
+        .box41{
+            height: 100px;
+            width: 150px;
+            background-color: rgba(218, 52, 37, 0.615);
+            position: absolute;
+            margin-top:80px;
+            margin-left: 360px;
+            color: white;
+        }
+        .box41 div{
+            margin-top: 35px;
+            margin-left: 18px;
+            position: absolute;
+        }
+        .box41 p{
+            margin-top: 50px;
+            font-size: small;
+            position: absolute;
+            margin-left: 55px;
+        }
+        .box42{
+            height: 100px;
+            width: 150px;
+            background-color: rgba(218, 52, 37, 0.615);
+            position: absolute;
+            margin-top:80px;
+            margin-left: 535px;
+            color: white;
+        }
+        .box42 div{
+            margin-top: 35px;
+            margin-left: 18px;
+            position: absolute;
+        }
+        .box42 p{
+            margin-top: 50px;
+            font-size: small;
+            position: absolute;
+            margin-left: 55px;
+        }
+        .box39:hover{
+           background-color: red;
+        }
+        .box40:hover{
+           background-color: red;
+        }
+        .box41:hover{
+           background-color: red;
+        }
+        .box42:hover{
+           background-color: red;
+        }
+        .box43{
+            position: absolute;
+            margin-top:6px;
+            margin-left: 189px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+     <div class="nav">
+        <ul>
+            <li class="box3">
+                <img src="素材5.jpg" alt="" width="80px" height="50px">
+            </li>
+            <li class="box4"><a href="#">首页</a></li>
+            <li class="box8"><a href="#">分类查看</a></li>
+            <li>
+                <input class="box5"></input>
+                <img src="素材3.jpg" alt="" width="50px" height="20px" class="box9">
+            </li>
+            <li>
+                <img src="素材2.jpg" alt="" class="box6" width="40px">
+            </li>
+            <li>
+                <button class="box7">退出</button>
+            </li>
+        </ul>
+     </div>
+     <!-- 板块一 -->
+    <div class="box">
+        <div>
+            <img src="素材1.jpg" alt="" width="700px" height="250px">
+        </div>
+        <div class="box10">公</div>
+        <div class="box10">通</div>
+        <div class="box10">素</div>
+        <div class="box10">专</div>
+        <ul class="box11">
+            <li>界面与设计应用
+                <p>房子</p>
+            </li>
+            <li>java程序编程
+                <p>赵三金</p>
+            </li>
+            <li>设计师的自我修养
+               <p>分享课堂</p>
+            </li>
+        </ul>
+        <ul class="box11">
+            <li>计算机基础
+                <p>胡微</p>
+            </li>
+            <li>植物观赏学基础
+                <p>韩一尾</p>
+            </li>
+            <li>生活常识101
+                <p>分享</p>
+            </li>
+        </ul>
+        <ul class="box11">
+            <li>新生引导课堂
+                <p>开学季</p>
+            </li>
+            <li>党课精神研讨课
+                <p>分享课程</p>
+            </li>
+            <li>专业方向
+                <p>毕业生</p>
+            </li>
+        </ul>
+        <ul class="box11">
+            <li>影视广告摄影基础
+                <p>分享课程</p>
+            </li>
+            <li>程序员的养成
+                <p>赵多金</p>
+            </li>
+            <li>如何让设计师改稿
+                <p>甲方</p>
+            </li>
+        </ul>
+      <div class="box12"></div>
+      <div class="box13"></div>
+      <div class="box14"></div>
+      <!-- 图标 -->
+      <div class="box15"></div>
+      <div class="box16"></div>
+      <div class="box17"></div>
+      <div class="box18"></div>
+      <!-- 图标里的加号 -->
+       <div class="box19"></div>
+       <div class="box20"></div>
+       <div class="box21"></div>
+       <div class="box22"></div>
+       <div class="box23"></div>
+       <div class="box24"></div>
+       <div class="box25"></div>
+       <div class="box26"></div>
+    </div>
+    <!-- 板块二 -->
+    <div class="box1">
+        <p class="box27">最热课程动态</p>
+        <p class="box28">精心为您推荐最佳口碑课程排行NO.1-NO.5</p>
+    
+    <!-- 组件 -->
+     <div class="box29">
+        <div>常勇</div>
+        <p>《化学生活》</p>
+     </div>
+     <div class="box30">
+        <div>苏燕</div>
+        <p>《视觉语言》</p>
+     </div>
+     <div class="box31">
+        <div>李达</div>
+        <p>《大学生语文》</p>
+     </div>
+     <div class="box32">
+        <div>张勇</div>
+        <p>《java语言程序设置》</p>
+     </div>
+     <div class="box33">
+        <div>张国</div>
+        <p>《计算机组装》</p>
+     </div>
+     <!-- 数字 -->
+      <div class="box34">01</div>
+      <div class="box35">02</div>
+      <div class="box36">03</div>
+      <div class="box37">04</div>
+      <div class="box38">05</div>
+    </div>
+    <!-- 板块三 -->
+    <div class="box2">
+        <p class="box27">猜你喜欢课程</p>
+        <p class="box28">根据你的浏览记录，推荐相似课程列表</p>
+        <!-- 组件 -->
+         <div class="box39">
+            <div>《毛泽东思想》</div>
+            <p>赵三金</p>
+         </div>
+         <div class="box40">
+            <div>《邓小平理论》</div>
+            <p>胡一薇</p>
+         </div>
+         <div class="box41">
+            <div>《科学发展观》</div>
+            <p>梁非凡</p>
+         </div>
+         <div class="box42">
+            <div>《三个代表》</div>
+            <p>韩一尾</p>
+         </div>
+         <div class="box43">
+            <img src="素材4.jpg" alt="">
+         </div>
+    </div>
+    
+    
+
+</body>
+</html>

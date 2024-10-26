@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两边自适应，中间定宽</title>
+    <style>
+        .box{
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        .box1{
+            background-color: red;
+            float: left;
+            flex: 1;
+        }
+        .box2{
+            background-color: yellow;
+            width: 600px;
+        }
+        .box3{
+            background-color: blue;
+            float: right;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

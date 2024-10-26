@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        .box1{
+            font-size: larger;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .box2{
+            background-color: rgba(128, 128, 128, 0.435);
+        }
+    </style>
+</head>
+<body>
+    <p align="center" class="box1">运费详情</p>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+        <tr height="50" class="box2">
+            <td align="center" width="100">区域</td>
+            <td width="450">寄达地</td>
+            <td width="200">首重（元/1000g）</td>
+            <td width="200">续重（元/1000g）</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr height="50">
+            <td rowspan="2" align="center" class="box2">一区</td>
+            <td height="50">浙江，上海，江苏</td>
+            <td>6</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td height="50">江西，安徽</td>
+            <td>7</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td height="50" align="center" class="box2">二区</td>
+            <td>吉林，黑龙江，云南</td>
+            <td>10</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td height="50" align="center" class="box2">三区</td>
+            <td>新疆，西藏</td>
+            <td>15</td>
+            <td>10</td>
+        </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
